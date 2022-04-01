@@ -8,12 +8,12 @@ server.use(express.json());
 
 // software Postman
 // requisição de um post em em corpo 
-server.post('/login', (req, res) => {
-    
+server.post('/echo', (req, res) => {
     console.log(req.body);  // recebe mensagens
     res.send('ok');
 });
 
+// no navegador escrever localhost:3000/
 server.get('/', (request, response) => {
     response.json(request.header);
 });

@@ -4,18 +4,12 @@ const PORT = 3000;
 
 const server = express();
 
-server.use(express.json());
-
-// software Postman
-// requisição de um post em em corpo 
-server.post('/login', (req, res) => {
-    
-    console.log(req.body);  // recebe mensagens
-    res.send('ok');
-});
+// no navegador escrever localhost:3000/
 
 server.get('/', (request, response) => {
-    response.json(request.header);
+  console.log('hello web');
+
+  response.send('<html><head><tittle>minhapagina</tittle></head><body><button>teste</button>teste-de-body</body></html>');
 });
 
 // usar cráse para escrever port
