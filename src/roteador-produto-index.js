@@ -5,16 +5,14 @@
 // D: delete = DELETE
 
 import express from 'express';
-import streamRouter from './stream.js';
-import canalRouter from './canal.js';
+import productRouter from './products.js';
 
 const PORT = 3000;
 
 const server = express();
 
 server.use(express.json());
-server.use('/stream/', streamRouter);
-server.use('/canal/', canalRouter);
+server.use('/produtos/', productRouter);
 
 // usar cráse para escrever port
 server.listen(PORT, () => {  // 3000 por convensão
