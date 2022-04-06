@@ -2,6 +2,13 @@ import { Router } from 'express';
 
 const router = new Router();
 
+
+router.post('/', (req, res) => {
+  res
+    .status(201)
+    .json(req.body);
+});
+
 // GET /stream?pageSize=20
 router.get('/', (req, res) => {
   console.log(req.query.pageSize);
@@ -10,13 +17,6 @@ router.get('/', (req, res) => {
   res
     .status(201)
     .json(req.header);
-});
-
-
-router.post('/', (req, res) => {
-  res
-    .status(201)
-    .json(req.body);
 });
 
 router.patch('/:id', (req, res) => {

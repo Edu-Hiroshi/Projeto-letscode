@@ -5,8 +5,9 @@
 // D: delete = DELETE
 
 import express from 'express';
-import streamRouter from './stream.js';
-import canalRouter from './canal.js';
+import { streamRouter } from './routes';
+import { canalRouter } from './routes';
+import { PORT } from './constants';
 
 const PORT = 3000;
 
