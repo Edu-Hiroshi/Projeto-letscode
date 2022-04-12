@@ -2,7 +2,6 @@ import { Router } from 'express';
 
 const router = new Router();
 
-
 router.post('/', (req, res) => {
   res
     .status(201)
@@ -11,8 +10,8 @@ router.post('/', (req, res) => {
 
 // GET /stream?pageSize=20
 router.get('/', (req, res) => {
-  console.log(req.query.pageSize);
-  console.log(req.params.tipo);
+  // console.log(req.query.pageSize);
+  // console.log(req.params.tipo);
 
   res
     .status(201)
@@ -21,15 +20,15 @@ router.get('/', (req, res) => {
 
 router.patch('/:id', (req, res) => {
   // alteraMinhaStream(req.params.id, req.body);
-  console.log("Alteracao do stream");
+  // console.log("Alteracao do stream");
   res
     .status(201)
     .json(req.body);
 });
 
 router.delete('/:id', (req, res) => {
-  //deletaMinhaStream(req.params.id, req.body);
-  console.log("Delecao da stream");
+  // deletaMinhaStream(req.params.id, req.body);
+  // console.log("Delecao da stream");
   res
     .status(201);
 });

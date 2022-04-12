@@ -8,20 +8,18 @@ router.post('/', (req, res) => {
     .json(req.body);
 });
 
-
 // GET /canal?pageSize=20
 router.get('/', (req, res) => {
-  console.log(req.query.pageSize);
-  console.log(req.params.tipo);
+  // console.log(req.query.pageSize);
+  // console.log(req.params.tipo);
 
   res
     .status(201)
     .json(req.header);
 });
 
-
 router.patch('/:id', (req, res) => {
-  alteraMeuCanal(req.params.id, req.body);
+  // alteraMeuCanal(req.params.id, req.body);
 
   res
     .status(201)
@@ -29,9 +27,9 @@ router.patch('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  //deletaMeuCanal(req.params.id, req.body);
-  console.log("Delecao do canal");
-  
+  // deletaMeuCanal(req.params.id, req.body);
+  // console.log('Delecao do canal');
+
   res
     .status(201);
 });
