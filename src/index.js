@@ -4,16 +4,12 @@
 // U: update = PUT / PATCH
 // D: delete = DELETE
 
-// eslint --init (mas precisa instalar)
-
+//                  eslint --init (mas precisa instalar)
 // alternativa:     npx eslint --init
 // perguntar se quer instalar localmente
 
 import express from 'express';
-// eslint-disable-next-line import/no-duplicates
-import { streamRouter } from './routes';
-// eslint-disable-next-line import/no-duplicates
-import { canalRouter } from './routes';
+import { streamRouter, canalRouter } from './routes';
 // eslint-disable-next-line import/extensions
 import { PORT } from './constants.js';
 
