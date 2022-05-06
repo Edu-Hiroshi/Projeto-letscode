@@ -1,4 +1,4 @@
-export { default as canalRouter } from './canal.js';
+export { default as itemRouter } from './item.js';
 export { default as streamRouter } from './stream.js';
 
 
